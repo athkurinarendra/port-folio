@@ -1,0 +1,143 @@
+<!DOCTYPE HTML>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Udacity - Portfolio">
+    <meta name="author" content="Juan Vargas">
+    <link href="css/style.css" rel="stylesheet">
+    <title>Portfolio</title>
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <div class="leftCol">
+          <span class="avatar"></span>
+        </div>
+        <div class="rightCol">
+          <h1 class="name">NARENDRA <strong>KUMAR</strong></h1>
+          <h2 class="career">Software Engineer & Full Stack Web Developer</h2>
+        </div>
+      </div>
+      <div class="container">
+        <div class="line"></div>
+      </div>
+    </header>
+	<div class="slideshow-container">
+
+<div class="mySlides fade">
+  <div class="numbertext">1 / 3</div>
+  <img src="mr.jpg" style="width:100%">
+  <div class="text">Caption Text</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">2 / 3</div>
+  <img src="pm.jpg" style="width:100%">
+  <div class="text">Caption Two</div>
+</div>
+
+<div class="mySlides fade">
+  <div class="numbertext">3 / 3</div>
+  <img src="vt.jpg" style="width:100%">
+  <div class="text">Caption Three</div>
+</div>
+
+</div>
+<br>
+
+<div style="text-align:center">
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+  <span class="dot"></span> 
+</div>
+    <main>
+      <div class="container">
+        <h2 class="heading"><span>Featured <strong>Work</strong></span></h2>
+        <div id="items">
+          <article class="portfolio-item">
+			
+            <img src="dhr.jpg" alt="Monkey">
+            <div class="text_block">
+              <h3>MAHENDRA SINGH DHONI</h3>
+              <p>
+MS Dhoni
+Mahendra Singh Dhoni January 2016 (cropped).jpg
+Dhoni in January 2016
+Personal information
+Full name	Mahendra Singh Pan Singh Dhoni
+Born	7 July 1981 (age 37)
+Ranchi, Bihar (now Jharkhand), India
+Nickname	Mahi, Captain Cool, Thala, MSD
+Height	5 ft 10 in (1.78 m)
+Batting	Right-handed
+Bowling	Right-arm medium
+Role	Wicket-keeper batsman
+International information
+National side	
+             </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="swg.jpg" alt="Cat">
+            <div class="text_block">
+              <h3>VIRENDER SEHWAG</h3>
+              <p>Virender Sehwag is a former Indian cricketer. Widely regarded as one of the most destructive batsmen of all time, Sehwag played as an aggressive right-handed opening batsman and also bowled part-time right-arm off-spin. He played his first One Day International in 1999 and joined the Indian test side in 2001.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="rhr.jpg" alt="Bear">
+            <div class="text_block">
+              <h3>ROHIT SHARMA</h3>
+              <p>Rohit Gurunath Sharma is an Indian international cricketer who is the vice-captain of the India national team in limited-overs formats. He is a right-handed batsman and was an occasional right-arm off break bowler. He plays for Mumbai in domestic cricket and captains Mumbai Indians in the Indian Premier League.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="khr.jpg" alt="Tiger">
+            <div class="text_block">
+              <h3>VIRAT KOHLI</h3>
+              <p>Virat Kohli is an Indian international cricketer who currently captains the India national team. A right-handed top-order batsman, Kohli is regarded as one of the best batsmen in the world. He plays for Royal Challengers Bangalore in the Indian Premier League, and has been the team's captain since 2013.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="rar.jpg" alt="Panda">
+            <div class="text_block">
+              <h3>SURESH RAINA</h3>
+              <p>Suresh Kumar Raina is an Indian international cricketer. An aggressive left-handed middle-order batsman and an occasional off-spin bowler, he is also regarded as one of the best fielders in world cricket. He plays for Uttar Pradesh in all forms of domestic cricket.</p>
+            </div>
+          </article>
+          <article class="portfolio-item">
+            <img src="shr.jpg" alt="Whale">
+            <div class="text_block">
+              <h3>SACHIN</h3>
+              <p>Sachin Ramesh Tendulkar is a former Indian international cricketer and a former captain of the Indian national team, regarded as one of the greatest batsmen of all time. He is the highest run scorer of all time in International cricket.</p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </main>
+    <footer>
+      <p>Designed by <strong>A.L.NARENDRA KUMAR</strong></p>
+    </footer>
+	<script>
+var slideIndex = 0;
+showSlides();
+
+function showSlides() {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  for (i = 0; i < slides.length; i++) {
+    slides[i].style.display = "none";  
+  }
+  slideIndex++;
+  if (slideIndex > slides.length) {slideIndex = 1}    
+  for (i = 0; i < dots.length; i++) {
+    dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";  
+  dots[slideIndex-1].className += " active";
+  setTimeout(showSlides, 2000); // Change image every 2 seconds
+}
+</script>
+  </body>
+</html>
